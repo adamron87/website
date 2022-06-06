@@ -5,12 +5,11 @@ body {
 
 
 #outside {
-    width: 1%;
+    width: 2%;
     margin: 0;
     border: 0;
     float: left;
     border-radius: 0px;
-    cursor: crosshair;
     transition: all 1.3s ease-out;
     background-color: #3A3845;
 }
@@ -23,13 +22,12 @@ body {
 }
 
 #outside2 {
-    width: 1%;
+    width: 2%;
     margin: 0;
     border: 0;
     float: left;
     border-radius: 0px;
-    cursor: crosshair;
-    transition: all 1.3s ease-out;
+    transition: all 10.3s ease-out;
     background-color: #3A3845;
 }
 

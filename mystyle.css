@@ -18,6 +18,12 @@ body {
   overflow-x: hidden;
 }
 
+/* This makes the links all the same color, regardless of click status */
+a:link, a:visited, a:hover, a:active {
+  color: #F7CCAC;
+}
+
+
 h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 24px;
@@ -26,6 +32,7 @@ h1 {
 }
 
 h2 {
+  font-size: 24px;
   color: #F7CCAC;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -82,9 +89,21 @@ h3 {
   margin-top: 2em;
 }
 
-.meNJames:hover {
-  filter: grayscale(100%) blur(5px);
-  transition: all 1s ease;
+.profilepic {
+  float: left;
+  margin-left: 11%;
+  margin-right: 2%;
+  margin-bottom: 5em;
+  border-radius: 50%;
+  max-width: 100%;
+  width: 35em;
+  height: auto;
+  filter: grayscale(100%) blur(10px);
+}
+
+.profilepic:hover {
+  filter: grayscale(70%) blur(0px);
+  transition: all 1s ease-in-out;
 }
 
 hr {
@@ -101,7 +120,6 @@ hr {
   margin: 0 3em 0 3em;
 }
 
-
 .biggerHR {
   border-style: none;
   width: 20%;
@@ -109,15 +127,6 @@ hr {
   justify-content: center;
   border-width: 4px;
   border-color: #8FBDD3;
-}
-
-.meNJames {
-  margin-bottom: 5em;
-  border-radius: 50%;
-  max-width: 100%;
-  width: 35em;
-  height: auto;
-  filter: grayscale(50%);
 }
 
 .mainBody {

@@ -5,6 +5,8 @@ body {
   */
 
   background-color: #3A3845;
+  background-color: #20201b;
+  background-color: #585851;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 12px;
   font-weight:normal;
@@ -44,8 +46,9 @@ p {
 }
 
 h3 {
+  position: absolute;
   font-size: 2em;
-  padding-left:50%;
+  padding-left:80%;
 }
 
 .topMargin {
@@ -90,10 +93,12 @@ h3 {
 }
 
 .profilepic {
-  float: left;
-  margin-left: 11%;
-  margin-right: 2%;
-  margin-bottom: 5em;
+  opacity: 15%;
+  position: absolute;
+  top: 58%;
+  left: 30%;
+  transform: translate(-50%, -70%);
+  z-index: 0;
   border-radius: 50%;
   max-width: 100%;
   width: 35em;
@@ -102,6 +107,7 @@ h3 {
 }
 
 .profilepic:hover {
+  opacity: 25%;
   filter: grayscale(70%) blur(0px);
   transition: all 1s ease-in-out;
 }
@@ -135,4 +141,8 @@ hr {
   padding-right:20em;
   color: #F7CCAC;
   font-weight:bold;
+}
+
+.navMenuHR {
+  width: 100px;
 }

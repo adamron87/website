@@ -48,6 +48,19 @@ h3 {
   padding-left:80%;
 }
 
+hr {
+  border-style: none;
+  width: 30%;
+  border-top-style: dotted;
+  justify-content: center;
+  border-width: 4px;
+  border-color: #8FBDD3;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
 .topMargin {
   margin-top: 50px;
   padding: 5px;
@@ -84,16 +97,11 @@ h3 {
   margin: auto auto 6em auto;
 }
 
-#header {
-  border-style: none;
-  margin-top: 2em;
-}
-
 .profilepic {
   opacity: 15%;
   position: absolute;
   top: 58%;
-  left: 30%;
+  left: 20%;
   transform: translate(-50%, -70%);
   z-index: 0;
   border-radius: 50%;
@@ -107,15 +115,6 @@ h3 {
   opacity: 25%;
   filter: grayscale(70%) blur(0px);
   transition: all 1s ease-in-out;
-}
-
-hr {
-  border-style: none;
-  width: 30%;
-  border-top-style: dotted;
-  justify-content: center;
-  border-width: 4px;
-  border-color: #8FBDD3;
 }
 
 .below {
@@ -133,11 +132,10 @@ hr {
 }
 
 .mainBody {
-  font-size:2em;
+  font-size:1.3em;
   padding-left:20em;
   padding-right:20em;
   color: #F7CCAC;
-  font-weight:bold;
 }
 
 .navMenuHR {
@@ -151,10 +149,21 @@ hr {
   grid-template-rows: 1fr 20px 1fr;
   place-items: center;
   right: 27.5%;
+  top: 27.5%;
   font-size: 1.75em;
   font-weight: bold;
 }
 
+.underCon:focus {
+  background-color: black;
+}
+
+#header {
+  border-style: none;
+  margin-top: 2em;
+}
+
+/* THIS IS THE CODE FOR SLIDING TEXT */
 .testDrop {
   animation: dropIn 1s ease forwards;
   animation-delay: calc(var(--order) * 300ms);
@@ -164,8 +173,4 @@ hr {
 @keyframes dropIn {
   from {transform: translateX(10000%);}
   to {transform: translateX(0);}
-}
-
-.underCon:focus {
-  background-color: black;
 }

@@ -100,14 +100,14 @@ a:any-link {
 .profilepic {
   opacity: 15%;
   position: absolute;
-  top: 58%;
+  top: 88%;
   left: 20%;
   transform: translate(-50%, -70%);
   z-index: 0;
   border-radius: 50%;
   max-width: 100%;
-  width: 35em;
-  height: auto;
+  width: 2000px;
+  height: 2000px;
   filter: grayscale(100%) blur(10px);
 }
 

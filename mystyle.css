@@ -5,6 +5,7 @@ body {
   */
 
   background-color: #3A3845;
+  background-size: contain;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 12px;
   font-weight:normal;
@@ -46,15 +47,6 @@ h3 {
   position: absolute;
   font-size: 2em;
   padding-left:80%;
-}
-
-hr {
-  border-style: none;
-  width: 30%;
-  border-top-style: dotted;
-  justify-content: center;
-  border-width: 4px;
-  border-color: #8FBDD3;
 }
 
 a:any-link {
@@ -120,9 +112,9 @@ There is a wrapper DIV for this class around the entire body
   transform: translate(-50%, -70%);
   z-index: -1;
   border-radius: 50%;
-  max-width: 100%;
-  width: 2000px;
-  height: 2000px;
+  min-width: 1%;
+  min-height: 1%;
+  width: 100%;
   filter: grayscale(100%) blur(10px);
 }
 
@@ -137,24 +129,11 @@ There is a wrapper DIV for this class around the entire body
   margin: 0 3em 0 3em;
 }
 
-.biggerHR {
-  border-style: none;
-  width: 20%;
-  border-top-style: dotted;
-  justify-content: center;
-  border-width: 4px;
-  border-color: #8FBDD3;
-}
-
 .mainBody {
   font-size:1.3em;
   padding-left:20em;
   padding-right:20em;
   color: #F7CCAC;
-}
-
-.navMenuHR {
-  width: 100px;
 }
 
 .grid {
@@ -178,7 +157,7 @@ There is a wrapper DIV for this class around the entire body
   margin-top: 2em;
 }
 
-/* THIS IS THE CODE FOR SLIDING TEXT */
+/* This is the code for sliding text */
 .testDrop {
   animation: dropIn 1s ease forwards;
   animation-delay: calc(var(--order) * 300ms);
@@ -188,4 +167,36 @@ There is a wrapper DIV for this class around the entire body
 @keyframes dropIn {
   from {transform: translateX(10000%);}
   to {transform: translateX(0);}
+}
+
+.hr_small {
+  border-style: none;
+  width: 100px;
+  border-top-style: dotted;
+  justify-content: center;
+  border-width: 4px;
+  border-color: #8FBDD3;
+}
+
+.hr_normal {
+  border-style: none;
+  width: 300px;
+  border-top-style: dotted;
+  justify-content: center;
+  border-width: 4px;
+  border-color: #8FBDD3;
+}
+
+.hr_big {
+  border-style: none;
+  width: 20%;
+  border-top-style: dotted;
+  justify-content: center;
+  border-width: 4px;
+  border-color: #8FBDD3;
+}
+
+/* This is an example of collecting multiple elements together */
+[class*="hr_"] {
+  opacity: 25%;
 }

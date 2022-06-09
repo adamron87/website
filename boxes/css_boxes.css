@@ -3,6 +3,11 @@ body {
     border: 0px;
 }
 
+.background {
+    position: absolute;
+    background-image: url("scrap175.jpg");
+    z-index: 0;
+}
 
 #outside {
     width: 2%;
@@ -11,7 +16,7 @@ body {
     float: left;
     border-radius: 0px;
     transition: all 1.3s ease-out;
-    background-color: #3A3845;
+    background-color: #100c29;
 }
 
 #outside:hover {
@@ -28,11 +33,11 @@ body {
     float: left;
     border-radius: 0px;
     transition: all 10.3s ease-out;
-    background-color: #3A3845;
+    background-color: #100c29;
 }
 
 #outside2:hover {
-    background-color: rgb(255, 158, 93);
+    background-color: rgb(255, 35, 182);
     opacity: 100%;
     transition: all 0s;
     animation: fadeInQuick 0s;
